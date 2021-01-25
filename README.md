@@ -36,7 +36,39 @@ Note: The following code will be responsible for reading and outputing the file 
 `
 
 ## Enhancements and Discoveries
-During the development lifecycle of this application, I learnt many different things with regards to performance and efficiency using python.
+During the development lifecycle of this application, I learnt many different things with regards to performance and efficiency using python. I learnt that in many situations, the use of dictionaries in python are more performant that a list, and even more performant than a repetition statement. Through external research I also learnt that dictionaries do however take more memory in a process, but in a program such as this there is no problems and the performance speed out-weighs the memory use.
+
+I learnt how to efficiently utilize exception based development and functions. In other programs I have built, this is very important to providing the user with meaningful information on a program termination or "dump". 
+
+One of the biggest enhancements that I implemented into this program was the use of dictionary comprehensions vs lists. This played well into some places in the program when pre-processing the data. A good example of this is when I am splitting my data into usable data structures. In multiple places, I loop through lists of "split" data and create dictionaries for frequencies of values. As indexing with dictionaries is a lot faster than indexing in lists, the program speed was enhanced. 
+
+`
+def calculate_county_sales(county:list):
+    """Function to calculate county sales.
+    Get the length of county and store this (More performant to store this instead of calculating each time)
+    Loop over each county.
+    Build dictionary with the values as keys (unique) and the values as the frequency.
+    Display processing status to the user based on length of county and the current index.
+    Args:
+        county (list): [List of counties that have been sliced from the input file during import.]
+
+    Returns:
+        county_dict[dictionary]: [Dictionary containing unique counties and also their frequencies]
+    """
+    county_dict = dict()
+    county_len = len(county)
+    index = 0
+    for c in county:
+        index += 1
+        if c in county_dict.keys():
+            county_dict[c] = county_dict[c] + 1
+        else:
+            county_dict[c] = 1
+        
+        print_processing_status(index, county_len)
+            
+    return county_dict # return a dictionary -> Contains unqiue counties and also frequency
+`
 
 
 
