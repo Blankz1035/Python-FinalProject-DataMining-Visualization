@@ -25,7 +25,7 @@ You should download the CSV file which incorporates _ALL_ the records in the dat
 
 ### Data Preparation
 * You should scrum the column "Property Size Description" from the file download. This field is redundant due to a large amount of missing data.
-* Save the file with the name :
+* Save the file with the name : PPR_ALL.csv
 
 Thats it! The rest is taken care of.
 
