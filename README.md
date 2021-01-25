@@ -70,5 +70,98 @@ One of the biggest enhancements that I implemented into this program was the use
         return county_dict # return a dictionary -> Contains unqiue counties and also frequency
 ```
 
+## Sample Output
+I designed the program with a strong focus on UX and functionality.  Let us look at some of the output from the program:
 
+> 
+>Program status: File import - Started..
+>Program status: File successfully split into lines. 438759 lines recognised..
+>
+>Would you like to process all records? y/n: y
+>Program status: Pre-processing beginning.. 
+>Processing Status: 5% complete..
+>Processing Status: 10% complete..
+>Processing Status: 20% complete..
+>Processing Status: 30% complete..
+>Processing Status: 40% complete..
+>Processing Status: 50% complete..
+>Processing Status: 60% complete..
+>Processing Status: 70% complete..
+>Processing Status: 80% complete..
+>Processing Status: 90% complete..
+>Processing Status: 100% complete..
+>
+>Calculating frequency of pricing data [27860 unique prices of 438759 sales]..
+>Processing Status: 5% complete..
+>Processing Status: 10% complete..
+>Processing Status: 20% complete..
+>Processing Status: 30% complete..
+>Processing Status: 40% complete..
+>Processing Status: 50% complete..
+>Processing Status: 60% complete..
+>Processing Status: 70% complete..
+>Processing Status: 80% complete..
+>Processing Status: 90% complete..
+>Processing Status: 100% complete..
+>
+>Program status: Beginning further data processing:
+>Processing status: 1.Data Count - Completed..
+>Processing status: 2.Maximum Price Determination - Completed.. 
+>Processing status: 3.Minimum Price Determination - Completed.. 
+>Processing status: 4.Mean Data Determination - Completed.. 
+>Processing status: 5.Median Data Determination - Completed.. 
+>Processing status: 6.Mode Data Determination - Completed.. 
+>Processing status: 8.Additional Data Determination - Beginning.. 
+>Processing status: 8. - Yearly Range Statistics - Completed..
+>Processing Status: 5% complete..
+>Processing Status: 10% complete..
+>Processing Status: 20% complete..
+>Processing Status: 30% complete..
+>Processing Status: 40% complete..
+>Processing Status: 50% complete..
+>Processing Status: 60% complete..
+>Processing Status: 70% complete..
+>Processing Status: 80% complete..
+>Processing Status: 90% complete..
+>Processing Status: 100% complete..
+>Processing status: 8. - County Statistics - Completed..
+>Processing status: 8. - Monthly Statistics - Beginning..
+>Processing Status: 5% complete..
+>Processing Status: 10% complete..
+>Processing Status: 20% complete..
+>Processing Status: 30% complete..
+>Processing Status: 40% complete..
+>Processing Status: 50% complete..
+>Processing Status: 60% complete..
+>Processing Status: 70% complete..
+>Processing Status: 80% complete..
+>Processing Status: 90% complete..
+>Processing Status: 100% complete..
+>Processing status: 8. - Monthly Statistics - Completed..
+>Processing status: 8.Additional Data Determination - Completed.. 
+>Processing Status: Ouput file created - PPR_OUT.csv
+>
+>Program status: pre-processing completed..
+>File has been imported to program.
+>
+>You can now analyse the data.
+>
+>Welcome to Data Processing of PPR_ALL.csv!
+>You can analyse the property prices since 01/01/2010 - 09/10/2020.
+>    0 - View menu
+>    1 - Number of records
+>    2 - Maximum value
+>    3 - Minimum value
+>    4 - Mean value
+>    5 - Median value
+>    6 - Mode value 
+>    7 - Standard Deviation
+>    8 - Extra Data Mining
+>    9 - Create Graphical Plots
+>    10 - Exit
+>
+
+
+## Conclusions
+The project development was a great success. The program output is able to provide detailed information on all areas I had wanted to analyse and mine from the data source. I learnt a lot in this program and looking forward to the next stages of development with regression, classification  and using ML techniques.
 
