@@ -43,31 +43,31 @@ I learnt how to efficiently utilize exception based development and functions. I
 One of the biggest enhancements that I implemented into this program was the use of dictionary comprehensions vs lists. This played well into some places in the program when pre-processing the data. A good example of this is when I am splitting my data into usable data structures. In multiple places, I loop through lists of "split" data and create dictionaries for frequencies of values. As indexing with dictionaries is a lot faster than indexing in lists, the program speed was enhanced. 
 
 `
-def calculate_county_sales(county:list):
-    """Function to calculate county sales.
-    Get the length of county and store this (More performant to store this instead of calculating each time)
-    Loop over each county.
-    Build dictionary with the values as keys (unique) and the values as the frequency.
-    Display processing status to the user based on length of county and the current index.
-    Args:
-        county (list): [List of counties that have been sliced from the input file during import.]
+    def calculate_county_sales(county:list):
+        """Function to calculate county sales.
+        Get the length of county and store this (More performant to store this instead of calculating each time)
+        Loop over each county.
+        Build dictionary with the values as keys (unique) and the values as the frequency.
+        Display processing status to the user based on length of county and the current index.
+        Args:
+            county (list): [List of counties that have been sliced from the input file during import.]
 
-    Returns:
-        county_dict[dictionary]: [Dictionary containing unique counties and also their frequencies]
-    """
-    county_dict = dict()
-    county_len = len(county)
-    index = 0
-    for c in county:
-        index += 1
-        if c in county_dict.keys():
-            county_dict[c] = county_dict[c] + 1
-        else:
-            county_dict[c] = 1
-        
-        print_processing_status(index, county_len)
+        Returns:
+            county_dict[dictionary]: [Dictionary containing unique counties and also their frequencies]
+        """
+        county_dict = dict()
+        county_len = len(county)
+        index = 0
+        for c in county:
+            index += 1
+            if c in county_dict.keys():
+                county_dict[c] = county_dict[c] + 1
+            else:
+                county_dict[c] = 1
             
-    return county_dict # return a dictionary -> Contains unqiue counties and also frequency
+            print_processing_status(index, county_len)
+                
+        return county_dict # return a dictionary -> Contains unqiue counties and also frequency
 `
 
 
