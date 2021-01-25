@@ -44,7 +44,7 @@ One of the biggest enhancements that I implemented into this program was the use
 
 `
     def calculate_county_sales(county:list):
-        """Function to calculate county sales.
+        "Function to calculate county sales.
         Get the length of county and store this (More performant to store this instead of calculating each time)
         Loop over each county.
         Build dictionary with the values as keys (unique) and the values as the frequency.
@@ -54,7 +54,7 @@ One of the biggest enhancements that I implemented into this program was the use
 
         Returns:
             county_dict[dictionary]: [Dictionary containing unique counties and also their frequencies]
-        """
+        "
         county_dict = dict()
         county_len = len(county)
         index = 0
